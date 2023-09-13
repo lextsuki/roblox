@@ -1,5 +1,5 @@
 -- The following code connects to a game using a game ID
-local gameId = "YOUR_GAME_ID_HERE"  -- Replace with the actual game ID you want to join
+local gameId = "8304191830"  -- Replace with the actual game ID you want to join
 game:GetService("TeleportService"):TeleportToPlaceInstance(gameId, game.Players.LocalPlayer.GameId)
 
 -- Function to check if the player is on a disconnection page
@@ -24,7 +24,7 @@ while true do
     wait(10)
     if isOnDisconnectedPage() then
         -- Replace "YOUR_GAME_ID_HERE" with the actual game ID you want to join
-        local gameId = "YOUR_GAME_ID_HERE"
+        local gameId = "8304191830"
         game:GetService("TeleportService"):TeleportToPlaceInstance(gameId, game.Players.LocalPlayer.GameId)
     end
 end
