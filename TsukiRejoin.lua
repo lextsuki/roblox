@@ -12,7 +12,7 @@ function isOnDisconnectedPage()
                 -- Check if the error message contains keywords like "Disconnected" or specific error codes
                 local errorText = errorLabel.Text:lower()
                 if errorText:match("disconnected") or errorText:match("error 277")
-                    or errorText:match("error 279") or errorText:match("failed to connect to the game") then
+                    or errorText:match("error 279") or errorText:match("failed to connect to the game") or errorText:match("Kick from the game") then
                     return true
                 end
             end
