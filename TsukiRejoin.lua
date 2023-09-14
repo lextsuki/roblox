@@ -41,14 +41,14 @@ game.StarterGui:SetCore("SendNotification", {
 })
 
 -- Rate limiting parameters
-local maxRetries = 3
+local maxRetries = 6
 local retries = 0
-local retryDelay = 5  -- Delay in seconds between retries
+local retryDelay = 6  -- Delay in seconds between retries
 
 -- Check for disconnection every 10 seconds
 while true do
     print("Checking")  -- Print a message to indicate the check is happening
-    wait(2)
+    wait(8)
     if isOnDisconnectedPage() then
         -- Retry the rejoin with a delay if a disconnection is detected
         while retries < maxRetries do
