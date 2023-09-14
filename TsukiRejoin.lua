@@ -37,7 +37,7 @@ end
 game.StarterGui:SetCore("SendNotification", {
     Title = "Anti-DC-Rejoin",
     Text = "Script Made by Tsuki, \nTangina mo Rob",
-    Duration = 20
+    Duration = 8
 })
 
 -- Rate limiting parameters
@@ -48,7 +48,7 @@ local retryDelay = 5  -- Delay in seconds between retries
 -- Check for disconnection every 10 seconds
 while true do
     print("Checking")  -- Print a message to indicate the check is happening
-    wait(3)
+    wait(2)
     if isOnDisconnectedPage() then
         -- Retry the rejoin with a delay if a disconnection is detected
         while retries < maxRetries do
